@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <div>
-      <div class="wrap">
+      <div className="wrap">
         <h4 className="title">AppleFresh</h4>
         <p className="sub-title">by dev {name}</p>
       </div>
