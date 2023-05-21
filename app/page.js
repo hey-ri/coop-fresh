@@ -5,10 +5,6 @@ export default function Home() {
 
   return (
     <div>
-      <nav>
-        <Link href={'/'}>홈</Link>
-        <Link href={'/list'}>List</Link>
-      </nav>
       <div class="wrap">
         <h4 className="title">AppleFresh</h4>
         <p className="sub-title">by dev {name}</p>
