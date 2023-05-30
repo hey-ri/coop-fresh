@@ -57,3 +57,7 @@ nav {
   gap: 20px;
   padding: 15px;
 }
+
+img {
+  width: 30%;
+}
