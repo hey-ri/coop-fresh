@@ -8,7 +8,7 @@
 사용 불가 속도가 빠름 */
 
 /* 큰 페이지는 서버 컴포넌트로 작은 기능들은 클라이언트 컴포넌트로 사용하면 좋다. */
-import age from './data';
+import { age } from './data';
 
 export default function Cart() {
   return (
