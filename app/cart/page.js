@@ -11,24 +11,27 @@
 import { age } from './data';
 
 export default function Cart() {
+  let cart = ['Tomato', 'Pasta', 'Coconut'];
+
   return (
     <div className="wrap">
       <h4 className="title">Cart</h4>
-      <div className="cart-item">
-        <p>상품명</p>
-        <p>$40</p>
-        <p>{age}개</p>
-      </div>
-      <CartItem />
-      <CartItem />
+      <CartItem cart={cart[0]} />
+      <CartItem cart={cart[1]} />
+      <CartItem cart={cart[2]} />
+      <Banner content={'현대카드'} />
     </div>
   );
 }
 
-function CartItem() {
+function Banner({ content }) {
+  return <h5>{content} 결제 행사중</h5>;
+}
+
+function CartItem({ cart }) {
   return (
     <div className="cart-item">
-      <p>상품명</p>
+      <p>{cart}</p>
       <p>$40</p>
       <p>1개</p>
     </div>
