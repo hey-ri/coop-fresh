@@ -20,12 +20,17 @@ export default function Cart() {
       <CartItem cart={cart[1]} />
       <CartItem cart={cart[2]} />
       <Banner content={'현대카드'} />
+      <Btn color={'red'} />
     </div>
   );
 }
 
 function Banner({ content }) {
   return <h5>{content} 결제 행사중</h5>;
+}
+
+function Btn({ color }) {
+  return <button style={{ background: color }}>완료</button>;
 }
 
 function CartItem({ cart }) {
